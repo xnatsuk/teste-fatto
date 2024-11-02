@@ -6,7 +6,7 @@ export default defineEventHandler(async (event) => {
   const client = await serverSupabaseClient<Database>(event)
   const body = await readBody(event)
 
-  const { data, error } = await client.from('todo_list').delete().match({ id: body.id })
+  const { data, error } = await client.from('todo_list').delete().eq('id', body.id)
   if (error) {
     throw createError({ statusMessage: error.message })
   }
