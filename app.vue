@@ -1,6 +1,11 @@
+<script setup lang="ts">
+useHead({
+  title: 'Todo App',
+})
+</script>
+
 <template>
-  <div>
-    <NuxtRouteAnnouncer />
-    <NuxtWelcome />
-  </div>
+  <NuxtLayout>
+    <NuxtPage />
+  </NuxtLayout>
 </template>
