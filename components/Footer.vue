@@ -12,10 +12,10 @@
           <li class="inline-block pe-4 text-xs">
             <a
               class="text-xs text-gray-500 underline hover:text-gray-800 hover:decoration-2 focus:outline-none focus:decoration-2 "
-              href="https://creativecommons.org/licenses/by-nc-sa/4.0/"
+              href="https://github.com/xnatsuk/teste-fatto?tab=MIT-1-ov-file#"
               target="_blank"
             >
-              CC BY-NC-SA 4.0
+              MIT License
             </a>
           </li>
 
