@@ -40,7 +40,12 @@ export async function useUpdateTask(id: number, task: Partial<Task>) {
 
 export async function useDeleteTask(id: number) {
   try {
-    await $fetch(`/api/tasks/${id}`, { method: 'DELETE', body: { id } })
+    await $fetch(`/api/tasks/${id}`, {
+      method: 'DELETE',
+      headers: {
+        Accept: '*/*',
+      },
+    })
   }
   catch (error) {
     console.error(error)
